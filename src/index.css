@@ -1,13 +1,115 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.users-container {
+  width: 95vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.search {
+  width: 90%;
+  padding: 0.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid darkgray;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  width: 90%;
+  border-bottom: 1px solid darkgray;
+  padding: 0.75rem;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.checked {
+  background-color: lightgrey;
+}
+.title {
+  font-weight: bold;
+}
+
+.item {
+  flex-basis: 15rem;
+  font-size: 18px;
+}
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: large;
+}
+
+.action-btn.hide {
+  display: none;
+}
+
+.delete {
+  color: red;
+}
+
+.save {
+  color: green;
+}
+.user p {
+  align-self: flex-start;
+}
+
+.bottom {
+  display: flex;
+  width: 90%;
+  margin-top: 1rem;
+  justify-content: center;
+  position: relative;
+}
+
+.del-btn {
+  position: absolute;
+  left: 6rem;
+  width: 8rem;
+  height: 2rem;
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+}
+.pagination-btns {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.pagination-btn {
+  outline: none;
+  border-radius: 50%;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  font-size: large;
+  border: 1px solid #1890ff;
+  background-color: white;
+}
+.pagination-btn.blue {
+  background-color: #1890ff;
+  color: white;
 }
